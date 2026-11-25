@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "presentationModes": [
+    "monochrome",
+    "color"
+  ],
+  "pageLayout": [
+    {
+      "size": 5,
+      "count": 2
+    },
+    {
+      "size": 10,
+      "count": 2
+    },
+    {
+      "size": 15,
+      "count": 2
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "monochrome-0870",
+      "mode": "monochrome",
+      "subject": "사다리",
+      "categoryId": "08",
+      "colorPalette": [
+        "#fbf8f4",
+        "#e2caac",
+        "#bd8842",
+        "#533c1d"
+      ],
+      "colorFamily": "wood",
+      "number": 1,
+      "size": 5,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0870-81cec19d84541be2",
+      "statusKey": "nonogram-playtest-v1-approved-status-0870-81cec19d84541be2",
+      "data": "pack-data/mono-game-0870.json",
+      "legacyPath": "monochrome-0870.html",
+      "next": "game.html?puzzle=monochrome-0872",
+      "nextLabel": "다음 문제 풀기"
+    },
+    {
+      "id": "monochrome-0872",
+      "mode": "monochrome",
+      "subject": "자물쇠",
+      "categoryId": "08",
+      "colorPalette": [
+        "#fcfaf2",
+        "#ebd7a2",
+        "#d2a32d",
+        "#5d4814"
+      ],
+      "colorFamily": "gold",
+      "number": 2,
+      "size": 5,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0872-a61c1ad783d6903b",
+      "statusKey": "nonogram-playtest-v1-approved-status-0872-a61c1ad783d6903b",
+      "data": "pack-data/mono-game-0872.json",
+      "legacyPath": "monochrome-0872.html",
+      "next": "game.html?puzzle=monochrome-1716",
+      "nextLabel": "다음 문제 풀기"
+    },
+    {
+      "id": "monochrome-1716",
+      "mode": "monochrome",
+      "subject": "병아리",
+      "categoryId": "17",
+      "colorPalette": [
+        "#fdfbf1",
+        "#f4e29a",
+        "#e6bd19",
+        "#65530b"
+      ],
+      "colorFamily": "yellow",
+      "number": 3,
+      "size": 10,
+      "storageKey": "nonogram-playtest-v1-approved-v1-1716-a41d60f56bc2a05d",
+      "statusKey": "nonogram-playtest-v1-approved-status-1716-a41d60f56bc2a05d",
+      "data": "pack-data/mono-game-1716.json",
+      "legacyPath": "monochrome-1716.html",
+      "next": "game.html?puzzle=monochrome-0102",
+      "nextLabel": "다음 문제 풀기"
+    },
+    {
+      "id": "monochrome-0102",
+      "mode": "monochrome",
+      "subject": "고래",
+      "categoryId": "01",
+      "colorPalette": [
+        "#f3f7fc",
+        "#a7c7e7",
+        "#3780c8",
+        "#183858"
+      ],
+      "colorFamily": "blue",
+      "number": 4,
+      "size": 10,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0102-0c15ea265d0bc1e6",
+      "statusKey": "nonogram-playtest-v1-approved-status-0102-0c15ea265d0bc1e6",
+      "data": "pack-data/mono-game-0102.json",
+      "legacyPath": "monochrome-0102.html",
+      "next": "game.html?puzzle=monochrome-0929",
+      "nextLabel": "다음 문제 풀기"
+    },
+    {
+      "id": "monochrome-0929",
+      "mode": "monochrome",
+      "subject": "아코디언",
+      "categoryId": "09",
+      "colorPalette": [
+        "#fcf3f3",
+        "#eaa6a4",
+        "#d0352f",
+        "#5b1715"
+      ],
+      "colorFamily": "red",
+      "number": 5,
+      "size": 15,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0929-8dfb2ad27d0bbcea",
+      "statusKey": "nonogram-playtest-v1-approved-status-0929-8dfb2ad27d0bbcea",
+      "data": "pack-data/mono-game-0929.json",
+      "legacyPath": "monochrome-0929.html",
+      "next": "game.html?puzzle=monochrome-1623",
+      "nextLabel": "다음 문제 풀기"
+    },
+    {
+      "id": "monochrome-1623",
+      "mode": "monochrome",
+      "subject": "쿼카",
+      "categoryId": "16",
+      "colorPalette": [
+        "#faf7f5",
+        "#dbc6b3",
+        "#ac7d53",
+        "#4c3724"
+      ],
+      "colorFamily": "brown",
+      "number": 6,
+      "size": 15,
+      "storageKey": "nonogram-playtest-v1-approved-v1-1623-76a8f8b095d4cbba",
+      "statusKey": "nonogram-playtest-v1-approved-status-1623-76a8f8b095d4cbba",
+      "data": "pack-data/mono-game-1623.json",
+      "legacyPath": "monochrome-1623.html",
+      "next": "collection.html",
+      "nextLabel": "문제 목록으로"
+    }
+  ],
+  "legacyRedirects": {}
+}
