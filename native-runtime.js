@@ -3,7 +3,7 @@
  'use strict';
  const cap=window.capacitorExports?.Capacitor,native=!!cap?.isNativePlatform(),plugin=native?window.capacitorExports.registerPlugin('StackNative'):null;
  const pending=new Map(),cache=new Map(),mirrors=new Map(),immediateFailures=new Set();let active=null,hydrating=true,browserDB=null,adsReady=null,rewardWork=null,navigation=null;
- const allowed=key=>/^(nonogram-playtest-v1-|rgb-stack-|nemologic-)/.test(key);
+ const allowed=key=>/^(nonogram-playtest-v1-|nonogram-playtest-v1-legacy-rgb-|nonogram-playtest-v1-legacy-nemologic-)/.test(key);
  const firstSolveKey='nonogram-playtest-v1-first-puzzle-solved';
  function rememberCompletion(key,value){
   if(!native||cache.get(firstSolveKey)==='1'||!key.startsWith('nonogram-playtest-v1-approved-status-'))return;

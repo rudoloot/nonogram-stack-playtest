@@ -2,7 +2,7 @@
 const C=PicrossCore, N=C.N, MAX_STACK=C.maxStack, CHANNEL_COUNT=C.channels||3, CHANNELS=Array.from({length:CHANNEL_COUNT},(_,i)=>i), MONO=CHANNEL_COUNT===1, names=MONO?['명암']:['빨강','녹색','파랑'];
 const themes=MONO?[['#555555','#e5e5e5']]:[['#c6544d','#fae8e3'],['#518568','#e2f0e4'],['#547fae','#e1ebf7']];
 const TAB_ORDER=MONO?CHANNELS:[...CHANNELS,'all'];
-const key=C.storageKey||(C.rule==='height-runs-max'?'rgb-stack-picross-v2-bull-height-runs-max':globalThis.PUZZLE_SPEC?'rgb-stack-picross-v1-bull-30-adjust30':'rgb-stack-picross-v1-rocket-10');
+const key=C.storageKey||(C.rule==='height-runs-max'?'nonogram-playtest-v1-legacy-rgb-picross-v2-bull-height-runs-max':globalThis.PUZZLE_SPEC?'nonogram-playtest-v1-legacy-rgb-picross-v1-bull-30-adjust30':'nonogram-playtest-v1-legacy-rgb-picross-v1-rocket-10');
 const $=id=>document.getElementById(id);
 const allClues=[...C.clues.flat(),...C.combinedClues];
 const CLUE_SLOTS={row:Math.max(1,...allClues.filter(c=>c.axis==='row').map(c=>c.groups.length)),col:Math.max(1,...allClues.filter(c=>c.axis==='col').map(c=>c.groups.length))};
@@ -30,7 +30,7 @@ let cellNodes=[],clueNodes=[],dragFrame=0,renderedSelection=null;
 const dirtyCells=new Set();
 function fresh(){const a=Array.from({length:N*N},()=>Array(CHANNEL_COUNT).fill(null));GIVEN_DATA.forEach(g=>a[g.index][g.channel]=g.value);return a;}
 try{
-  const ownSave=hintWallet?.pendingGame(key)||(globalThis.StackStorage||localStorage).getItem(key),legacySave=!C.noGivens&&!ownSave&&C.rule==='height-runs-max'?(globalThis.StackStorage||localStorage).getItem('rgb-stack-picross-v1-bull-30-adjust30'):null;
+  const ownSave=hintWallet?.pendingGame(key)||(globalThis.StackStorage||localStorage).getItem(key),legacySave=!C.noGivens&&!ownSave&&C.rule==='height-runs-max'?(globalThis.StackStorage||localStorage).getItem('nonogram-playtest-v1-legacy-rgb-picross-v1-bull-30-adjust30'):null;
   const saved=JSON.parse(ownSave||legacySave||'null');
   if(saved && Array.isArray(saved.cells) && saved.cells.length===N*N && saved.cells.every(a=>Array.isArray(a)&&a.length===CHANNEL_COUNT&&a.every(v=>v===null||Number.isInteger(v)&&v>=0&&v<=MAX_STACK))){
     boardState=saved.cells;

@@ -699,7 +699,7 @@ const STACK_PAGE_LAYOUT=[{"size":5,"count":2},{"size":10,"count":2},{"size":15,"
     const channels=1;
     const size=Number(card.dataset.size)||10;
     if(status?.complete!==true||status.filled!==size*size*channels)return null;
-    const cells=readSave(card.dataset.storageKey||((monochrome?'nonogram-playtest-v1-mono-v1-':'nemologic-stack-3-v1-')+id))?.cells;
+    const cells=readSave(card.dataset.storageKey||((monochrome?'nonogram-playtest-v1-mono-v1-':'nonogram-playtest-v1-legacy-nemologic-stack-3-v1-')+id))?.cells;
     return Array.isArray(cells)&&cells.length===size*size&&cells.every(cell=>
       Array.isArray(cell)&&cell.length===channels&&cell.every(value=>Number.isInteger(value)&&value>=0&&value<=3))?cells:null;
   }
