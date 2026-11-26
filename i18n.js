@@ -151,7 +151,8 @@
     '말풍선에서 안내하는 도구와 초록 테두리 칸을 따라가 보세요. 다음을 눌러 함께 채울 수도 있어요.':'Follow the guide’s tool and the cells outlined in green. You can also press Next to fill them together.'
   }));
   for(const [name,english]of Object.entries(globalThis.StackSubjectNames||{}))messages.set(name,english);
-  let language='ko';try{if((globalThis.StackStorage||localStorage).getItem('nonogram-playtest-v1-language')==='en')language='en';}catch{}
+  const readLanguage=()=>{try{return (globalThis.StackStorage||localStorage).getItem('nonogram-playtest-v1-language')==='ko'?'ko':'en';}catch{return 'en';}};
+  let language=readLanguage();
   const originals=new WeakMap(),attributeOriginals=new WeakMap();
   function translate(source){
     const text=source.trim();

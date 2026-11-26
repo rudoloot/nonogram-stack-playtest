@@ -1,8 +1,13 @@
 /* A single game document loads one catalog entry and its unchanged puzzle data. */
 (async()=>{
-  const english=(()=>{try{return (globalThis.StackStorage||localStorage).getItem('nonogram-playtest-v1-language')==='en';}catch{return false;}})();
+  const isEnglish=()=>{try{return (globalThis.StackStorage||localStorage).getItem('nonogram-playtest-v1-language')!=='ko';}catch{return true;}};
+  let english=isEnglish();
   const $=id=>document.getElementById(id);
-  if(english)$('game-loading').textContent='Loading puzzle…';
+  function showLoading(){
+    document.documentElement.lang=english?'en':'ko';
+    $('game-loading').textContent=english?'Loading puzzle…':'퍼즐을 불러오는 중입니다.';
+  }
+  showLoading();
   async function readJSON(file){
     const response=await fetch(file);
     if(!response.ok)throw Error(`Could not load ${file}: ${response.status}`);
@@ -14,6 +19,7 @@
   });}
   try{
     await (window.StackRuntime?.ready||Promise.resolve());
+    english=isEnglish();showLoading();
     const catalog=await readJSON('pack-data/game-catalog.json');
     const weekly=await StackWeekly.load(catalog.puzzles.map(p=>p.id.replace(/^monochrome-/,'')));
     catalog.puzzles.push(...weekly.map(StackWeekly.puzzle));
