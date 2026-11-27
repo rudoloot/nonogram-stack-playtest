@@ -357,7 +357,10 @@ $('board').addEventListener('pointerdown',e=>{
   const cell=e.target.closest('[data-index]');
   if(!cell||!e.isPrimary||e.button!==0||stroke)return;
   if($('board-viewport')?.classList.contains('pan-mode'))return;
-  if(inputMode==='dpad'){e.preventDefault();setInputMode('touch');return;}
+  if(inputMode==='dpad'){
+    e.preventDefault();setInputMode('touch');
+    if(e.pointerType!=='mouse')return;
+  }
   const hadLine=terrainSelection!==null;terrainSelection=null;
   selected=Number(cell.dataset.index);cancelHint();if(hadLine)render();
   if(tab==='all'){render();return;}
@@ -365,8 +368,9 @@ $('board').addEventListener('pointerdown',e=>{
   const first=cellNodes[0].getBoundingClientRect(),last=cellNodes[N*N-1].getBoundingClientRect();
   const geometry={left:first.left+window.scrollX,top:first.top+window.scrollY,width:last.right-first.left,height:last.bottom-first.top};
   const editor=($('board-viewport')||$('editor-panel')).getBoundingClientRect();
-  const dockTop=document.querySelector('.input-dock')?.getBoundingClientRect().top??innerHeight;
-  Object.assign(geometry,{clipLeft:Math.max(editor.left,first.left),clipRight:Math.min(editor.right,last.right),clipTop:Math.max(editor.top,first.top),clipBottom:Math.min(dockTop,editor.bottom,last.bottom)});
+  // The controls can be rendered beside the board with a display:contents wrapper.
+  // Clip to the board viewport, not to the control wrapper's (possibly empty) box.
+  Object.assign(geometry,{clipLeft:Math.max(editor.left,first.left,0),clipRight:Math.min(editor.right,last.right,innerWidth),clipTop:Math.max(editor.top,first.top,0),clipBottom:Math.min(editor.bottom,last.bottom,innerHeight)});
   geometry.cellWidth=geometry.width/N;geometry.cellHeight=geometry.height/N;
   $('board').querySelectorAll('.error,.hint-cell').forEach(el=>dirtyCells.add(Number(el.dataset.index)));
   stroke={pointerId:e.pointerId,channel:tab,value:paintValue,last:[e.clientX,e.clientY],spacing:Math.min(geometry.cellWidth,geometry.cellHeight)/3,geometry,visited:new Set(),changes:[]};

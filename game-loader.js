@@ -56,7 +56,7 @@
     const answer=spec.answer||spec.source?.subject;
     if(answer){$('win-description').textContent=answer;$('win-description').classList.add('win-answer');}
     else $('win-description').textContent=`${n*n*channels}개의 높이를 모두 찾았어요.`;
-    for(const file of ['i18n.js','input-sounds.js','shared-ui.js','clue-feedback.js','hint-wallet.js','progress-preview.js','app.js','board-layout.js','fruit-game-ui.js','hint-panel.js']){
+    for(const file of ['i18n.js','input-sounds.js','shared-ui.js','clue-feedback.js','hint-wallet.js','progress-preview.js','app.js?v=pc-portrait-1','board-layout.js','fruit-game-ui.js','hint-panel.js']){
       await loadScript(file);
       if(file==='hint-wallet.js')await window.StackRuntime?.recoverRewards();
     }
