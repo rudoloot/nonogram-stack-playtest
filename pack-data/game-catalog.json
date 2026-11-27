@@ -7,15 +7,19 @@
   "pageLayout": [
     {
       "size": 5,
-      "count": 2
+      "count": 3
     },
     {
       "size": 10,
-      "count": 2
+      "count": 3
     },
     {
       "size": 15,
-      "count": 2
+      "count": 3
+    },
+    {
+      "size": 20,
+      "count": 3
     }
   ],
   "puzzles": [
@@ -38,7 +42,7 @@
       "data": "pack-data/mono-game-0870.json",
       "legacyPath": "monochrome-0870.html",
       "next": "game.html?puzzle=monochrome-0872",
-      "nextLabel": "다음 문제 풀기"
+      "nextLabel": "다음 퍼즐 풀기"
     },
     {
       "id": "monochrome-0872",
@@ -58,29 +62,29 @@
       "statusKey": "nonogram-playtest-v1-approved-status-0872-a61c1ad783d6903b",
       "data": "pack-data/mono-game-0872.json",
       "legacyPath": "monochrome-0872.html",
-      "next": "game.html?puzzle=monochrome-1716",
-      "nextLabel": "다음 문제 풀기"
+      "next": "game.html?puzzle=monochrome-0881",
+      "nextLabel": "다음 퍼즐 풀기"
     },
     {
-      "id": "monochrome-1716",
+      "id": "monochrome-0881",
       "mode": "monochrome",
-      "subject": "병아리",
-      "categoryId": "17",
+      "subject": "해골",
+      "categoryId": "08",
       "colorPalette": [
-        "#fdfbf1",
-        "#f4e29a",
-        "#e6bd19",
-        "#65530b"
+        "#f8f8f7",
+        "#cbc9c2",
+        "#8a8575",
+        "#3d3a34"
       ],
-      "colorFamily": "yellow",
+      "colorFamily": "ivory",
       "number": 3,
-      "size": 10,
-      "storageKey": "nonogram-playtest-v1-approved-v1-1716-a41d60f56bc2a05d",
-      "statusKey": "nonogram-playtest-v1-approved-status-1716-a41d60f56bc2a05d",
-      "data": "pack-data/mono-game-1716.json",
-      "legacyPath": "monochrome-1716.html",
+      "size": 5,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0881-c2844c38fea35322",
+      "statusKey": "nonogram-playtest-v1-approved-status-0881-c2844c38fea35322",
+      "data": "pack-data/mono-game-0881.json",
+      "legacyPath": "monochrome-0881.html",
       "next": "game.html?puzzle=monochrome-0102",
-      "nextLabel": "다음 문제 풀기"
+      "nextLabel": "다음 퍼즐 풀기"
     },
     {
       "id": "monochrome-0102",
@@ -100,29 +104,92 @@
       "statusKey": "nonogram-playtest-v1-approved-status-0102-0c15ea265d0bc1e6",
       "data": "pack-data/mono-game-0102.json",
       "legacyPath": "monochrome-0102.html",
-      "next": "game.html?puzzle=monochrome-0929",
-      "nextLabel": "다음 문제 풀기"
+      "next": "game.html?puzzle=monochrome-1716",
+      "nextLabel": "다음 퍼즐 풀기"
     },
     {
-      "id": "monochrome-0929",
+      "id": "monochrome-1716",
       "mode": "monochrome",
-      "subject": "아코디언",
-      "categoryId": "09",
+      "subject": "병아리",
+      "categoryId": "17",
       "colorPalette": [
-        "#fcf3f3",
-        "#eaa6a4",
-        "#d0352f",
-        "#5b1715"
+        "#fdfbf1",
+        "#f4e29a",
+        "#e6bd19",
+        "#65530b"
       ],
-      "colorFamily": "red",
+      "colorFamily": "yellow",
       "number": 5,
+      "size": 10,
+      "storageKey": "nonogram-playtest-v1-approved-v1-1716-a41d60f56bc2a05d",
+      "statusKey": "nonogram-playtest-v1-approved-status-1716-a41d60f56bc2a05d",
+      "data": "pack-data/mono-game-1716.json",
+      "legacyPath": "monochrome-1716.html",
+      "next": "game.html?puzzle=monochrome-0110",
+      "nextLabel": "다음 퍼즐 풀기"
+    },
+    {
+      "id": "monochrome-0110",
+      "mode": "monochrome",
+      "subject": "문어",
+      "categoryId": "01",
+      "colorPalette": [
+        "#f8f4fb",
+        "#cdafdf",
+        "#8e49b6",
+        "#3f2050"
+      ],
+      "colorFamily": "purple",
+      "number": 6,
+      "size": 10,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0110-18c90e2339326291",
+      "statusKey": "nonogram-playtest-v1-approved-status-0110-18c90e2339326291",
+      "data": "pack-data/mono-game-0110.json",
+      "legacyPath": "monochrome-0110.html",
+      "next": "game.html?puzzle=monochrome-1507",
+      "nextLabel": "다음 퍼즐 풀기"
+    },
+    {
+      "id": "monochrome-1507",
+      "mode": "monochrome",
+      "subject": "닌자",
+      "categoryId": "15",
+      "colorPalette": [
+        "#f7f7f8",
+        "#c1c6cd",
+        "#737d8c",
+        "#32373e"
+      ],
+      "colorFamily": "ink",
+      "number": 7,
       "size": 15,
-      "storageKey": "nonogram-playtest-v1-approved-v1-0929-8dfb2ad27d0bbcea",
-      "statusKey": "nonogram-playtest-v1-approved-status-0929-8dfb2ad27d0bbcea",
-      "data": "pack-data/mono-game-0929.json",
-      "legacyPath": "monochrome-0929.html",
+      "storageKey": "nonogram-playtest-v1-approved-v1-1507-40b01df09f015ead",
+      "statusKey": "nonogram-playtest-v1-approved-status-1507-40b01df09f015ead",
+      "data": "pack-data/mono-game-1507.json",
+      "legacyPath": "monochrome-1507.html",
+      "next": "game.html?puzzle=monochrome-0116",
+      "nextLabel": "다음 퍼즐 풀기"
+    },
+    {
+      "id": "monochrome-0116",
+      "mode": "monochrome",
+      "subject": "코끼리",
+      "categoryId": "01",
+      "colorPalette": [
+        "#f7f7f8",
+        "#c4c6ca",
+        "#797d86",
+        "#35373b"
+      ],
+      "colorFamily": "silver",
+      "number": 8,
+      "size": 15,
+      "storageKey": "nonogram-playtest-v1-approved-v1-0116-aac90df8875363fb",
+      "statusKey": "nonogram-playtest-v1-approved-status-0116-aac90df8875363fb",
+      "data": "pack-data/mono-game-0116.json",
+      "legacyPath": "monochrome-0116.html",
       "next": "game.html?puzzle=monochrome-1623",
-      "nextLabel": "다음 문제 풀기"
+      "nextLabel": "다음 퍼즐 풀기"
     },
     {
       "id": "monochrome-1623",
@@ -136,14 +203,77 @@
         "#4c3724"
       ],
       "colorFamily": "brown",
-      "number": 6,
+      "number": 9,
       "size": 15,
       "storageKey": "nonogram-playtest-v1-approved-v1-1623-76a8f8b095d4cbba",
       "statusKey": "nonogram-playtest-v1-approved-status-1623-76a8f8b095d4cbba",
       "data": "pack-data/mono-game-1623.json",
       "legacyPath": "monochrome-1623.html",
+      "next": "game.html?puzzle=monochrome-3111",
+      "nextLabel": "다음 퍼즐 풀기"
+    },
+    {
+      "id": "monochrome-3111",
+      "mode": "monochrome",
+      "subject": "파프리카",
+      "categoryId": "31",
+      "colorPalette": [
+        "#fcf3f3",
+        "#eaa6a4",
+        "#d0352f",
+        "#5b1715"
+      ],
+      "colorFamily": "red",
+      "number": 10,
+      "size": 20,
+      "storageKey": "nonogram-playtest-v1-approved-v1-3111-e9c1b7eb6ee56a1b",
+      "statusKey": "nonogram-playtest-v1-approved-status-3111-e9c1b7eb6ee56a1b",
+      "data": "pack-data/mono-game-3111.json",
+      "legacyPath": "monochrome-3111.html",
+      "next": "game.html?puzzle=monochrome-1618",
+      "nextLabel": "다음 퍼즐 풀기"
+    },
+    {
+      "id": "monochrome-1618",
+      "mode": "monochrome",
+      "subject": "너구리",
+      "categoryId": "16",
+      "colorPalette": [
+        "#f7f7f8",
+        "#c4c6ca",
+        "#797d86",
+        "#35373b"
+      ],
+      "colorFamily": "silver",
+      "number": 11,
+      "size": 20,
+      "storageKey": "nonogram-playtest-v1-approved-v1-1618-544ffcf3be3f0559",
+      "statusKey": "nonogram-playtest-v1-approved-status-1618-544ffcf3be3f0559",
+      "data": "pack-data/mono-game-1618.json",
+      "legacyPath": "monochrome-1618.html",
+      "next": "game.html?puzzle=monochrome-7001",
+      "nextLabel": "다음 퍼즐 풀기"
+    },
+    {
+      "id": "monochrome-7001",
+      "mode": "monochrome",
+      "subject": "티라노사우루스",
+      "categoryId": "70",
+      "colorPalette": [
+        "#f4faf5",
+        "#b1ddb6",
+        "#4eb159",
+        "#224e27"
+      ],
+      "colorFamily": "green",
+      "number": 12,
+      "size": 20,
+      "storageKey": "nonogram-playtest-v1-approved-v1-7001-83e25a97850e3da3",
+      "statusKey": "nonogram-playtest-v1-approved-status-7001-83e25a97850e3da3",
+      "data": "pack-data/mono-game-7001.json",
+      "legacyPath": "monochrome-7001.html",
       "next": "collection.html",
-      "nextLabel": "문제 목록으로"
+      "nextLabel": "목록 돌아가기"
     }
   ],
   "legacyRedirects": {}

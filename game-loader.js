@@ -20,7 +20,7 @@
   try{
     await (window.StackRuntime?.ready||Promise.resolve());
     english=isEnglish();showLoading();
-    const catalog=await readJSON('pack-data/game-catalog.json');
+    const catalog=await readJSON('pack-data/game-catalog.json?v=demo-12-v1');
     const weekly=await StackWeekly.load(catalog.puzzles.map(p=>p.id.replace(/^monochrome-/,'')));
     catalog.puzzles.push(...weekly.map(StackWeekly.puzzle));
     const id=new URLSearchParams(location.search).get('puzzle');
